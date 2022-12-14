@@ -119,6 +119,7 @@ public class Graph
             nTree = 0;
             for (int j = 0; j <= nVerts - 1; j++)
                 vertexList[j].isInTree = false;
+            sPath = new DistOriginal[max_verts];
         }
         else
         {
