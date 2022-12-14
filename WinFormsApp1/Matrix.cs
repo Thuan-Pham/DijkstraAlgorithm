@@ -33,12 +33,12 @@ namespace WinFormsApp1
             {
                 string[] row = new string[10];
                 row[0] = i.ToString();
-                for (int j = 1 ; j < 10; j++)
+                for (int j = 1; j < 10; j++)
                 {
-                    if (theGraph.adjMat[i, j] == 1000000)
+                    if (theGraph.adjMat[i, j-1] == 1000000)
                         row[j] = "inf";
                     else
-                        row[j] = theGraph.adjMat[i, j].ToString();
+                        row[j] = theGraph.adjMat[i, j-1].ToString();
                 }
                 dataGridView1.Rows.Add(row);
             }
